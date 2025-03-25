@@ -1,5 +1,5 @@
 {% set name = "pyrtools" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyrtools-{{ version }}.tar.gz
-  sha256: 0abfb5a7ccac9b40c8f9cdbc15edb4bd0090c7eed01dac9e9d668ed37bc8f99f
+  sha256: c94510cba9dea9df07cfe898361014f5908d2fcd39362a0e1aba7f562318d25d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
