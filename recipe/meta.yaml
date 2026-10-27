@@ -21,8 +21,7 @@ requirements:
     - {{ stdlib('c') }}
   host:
     - python
-    - setuptools
-    - wheel
+    - setuptools >=70.1
     - setuptools-scm
     - pip
   run:
